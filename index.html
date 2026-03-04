@@ -1,87 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You 💕</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-
-        .container {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 40px 25px;
-            border-radius: 20px;
-            max-width: 700px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #333;
-            white-space: pre-line;
-        }
-
-        .hearts {
-            font-size: 22px;
-            margin: 10px 0 20px 0;
-        }
-
-        .next-btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background: #ff6f91;
-            color: white;
-            font-weight: 600;
-            border: none;
-            border-radius: 12px;
-            text-decoration: none;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .next-btn:hover {
-            background: #ff3f6b;
-        }
-
-        @media (max-width: 600px) {
-            p {
-                font-size: 16px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Message for Alice - Page 1</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000000; /* black background */
+        color: #FFD700; /* golden text */
+        overflow: hidden;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        padding: 50px;
+        box-sizing: border-box;
+        font-size: 2em;
+        line-height: 1.8em;
+    }
+    .nav-button {
+        position: fixed;
+        bottom: 30px;
+        background-color: #FFD700;
+        border: none;
+        padding: 15px 25px;
+        font-size: 1.2em;
+        color: #000;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+    .nav-button:hover {
+        background-color: #FFC300;
+    }
+    .floating {
+        position: absolute;
+        font-size: 2em;
+        animation: float 10s infinite linear;
+        pointer-events: none;
+    }
+    @keyframes float {
+        0% { transform: translateY(100vh) translateX(0) rotate(0deg); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateY(-50vh) translateX(50px) rotate(360deg); opacity: 0; }
+    }
+</style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="hearts">💕 💕 💕</div>
+<div class="content">
+    <h1>Alice,</h1>
+    <p>I’ve taken time to sit with everything not from anger, not from desperation, but from a place of reflection. 
+    I don’t want this to be noise or emotion speaking over itself. I want this to be something you can read slowly 
+    and truly understand my heart.</p>
+    <button class="nav-button" onclick="location.href='page2.html'">Next ➡️</button>
+</div>
 
-        <p>
-Hey I know I fucked up dearly. It is regret I carry with me every day that made me do things I'm not proud of, but I took it as a learning experience and a road pavement that I need to walk on. A path free from ego, pettiness, and emotional control. I've grown and moved past that in terms of how I do and see things. For loving someone means always standing by them no matter the situation, for love knows no bounds. My love knows no bounds. I didn't care how dumb I look chasing you, for it is you I want to be better for and create peace, love, and harmony — no one else. I was stupid for hurting you. You mean the world to me and I don't want to redo the same mistakes again but move past them and rebuild what we once had. In all the correct ways.
-        </p>
-             <div class="hearts">💕 💕 💕</div>
-
-        <!-- Next Page Button linking to story.html -->
-        <a href="story.html" class="next-btn">Next Page ➡️</a>
-    </div>
+<!-- Floating hearts, stars, rings -->
+<div class="floating" style="top:10%; left:15%;">💖</div>
+<div class="floating" style="top:30%; left:70%;">✨</div>
+<div class="floating" style="top:60%; left:40%;">💍</div>
+<div class="floating" style="top:80%; left:20%;">❤️</div>
+<div class="floating" style="top:50%; left:80%;">⭐</div>
 
 </body>
 </html>
+
 
 
 
